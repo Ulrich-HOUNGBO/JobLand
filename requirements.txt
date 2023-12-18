@@ -1,0 +1,7 @@
+djangorestframework
+Django~=5.0
+djangorestframework-jwt
+djangorestframework-simplejwt
+drf-yasg
+pytest
+mixer
