@@ -44,7 +44,7 @@ class Job(models.Model):
     state = models.CharField(max_length=50, null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, null=True, blank=True)
+    user = models.ForeignKey('user.User', on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.title

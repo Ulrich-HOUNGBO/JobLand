@@ -15,10 +15,10 @@ class JobApplication(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.job.title
+        return self.job
 
     def __repr__(self):
-        return self.job.title
+        return self.job
 
     class Meta:
         db_table = "job_application"
